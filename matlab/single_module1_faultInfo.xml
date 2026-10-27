@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="5577b920-4c92-4157-ac17-348ecfd6d449">
+    <failureModes type="faultinfo.FailureMode" uuid="c20db7e5-a10e-4fd9-b49f-8af986702953">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="9d3e375b-a223-40cc-9fc4-748fd62f3945"/>
+      <faultSubsystemName>Half_BridgeDriver_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <faultModelName>single_module1_FaultModel</faultModelName>
+    <faultModelUUID>f8c055fd-36cb-40a8-b736-4588a05e8326</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="48e200c0-d403-42b5-b6db-a2267d22971b">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="ffcfc7b8-f9cd-4e40-8946-37323f57765e">
+      <checksum>00000000-0000-0000-0000-000000000000</checksum>
+      <condition>x == true</condition>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SampleConditional</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ExpressionSymbol" uuid="ce6fb849-f058-4aa1-88f5-1289da9e7b39">
+        <expression>true</expression>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="12be87f9-51c3-4654-a5e4-5bc9988d107d">
+      <activeFault type="faultinfo.SSFault" uuid="9d3e375b-a223-40cc-9fc4-748fd62f3945"/>
+      <faultedEntityID>SSSubelement|single_module1:99|State</faultedEntityID>
+      <faultedEntityName>single_module1/Half-Bridge Driver/State</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="9d3e375b-a223-40cc-9fc4-748fd62f3945">
+        <checksum>26a5f3f0-1cdb-4865-a547-d124feb1b7f3</checksum>
+        <faultDescription></faultDescription>
+        <faultName>Half_BridgeDriver_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.PermanentTrigger" uuid="e85adc79-dabb-4543-a411-f04ac7eadf64">
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>false</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2026-10-26T22:29:15</lastUpdatedAt>
+    <modelName>single_module1</modelName>
+    <modelUUID>7a180551-d790-48ce-8eae-d6009e552934</modelUUID>
+  </faultinfo.FaultContainerSet>
+</MF0>
